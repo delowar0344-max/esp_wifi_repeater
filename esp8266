@@ -1,0 +1,16 @@
+```cpp
+#include <ESP8266WiFi.h>
+
+void setup() {
+  Serial.begin(115200);
+  WiFi.mode(WIFI_AP_STA);
+
+  WiFi.begin("siraj", "10203040");
+  WiFi.softAP("Rakib", "esp8266r");
+
+  Serial.println("WiFi Repeater Started!");
+}
+
+void loop() {
+}
+```
